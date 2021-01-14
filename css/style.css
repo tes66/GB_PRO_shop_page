@@ -1,0 +1,286 @@
+:root {
+  --orange: #ff6a6a;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.navbar {
+  z-index: 1;
+  width: 100%;
+  height: 75px;
+  background: #222222;
+  padding-top: 15px;
+  position: fixed;
+  }
+
+.navbar__wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar__icon {
+  width: 44px;
+  height: 44px;
+  background: #9c9c9c;
+}
+
+.navbar__icon.float-left {
+  margin-right: 20px;
+}
+
+.navbar__icon.float-right {
+  margin-left: 20px;
+}
+
+.navbar__nav.open {
+  position: fixed;
+  right: 0;
+  width: 232px;
+  height: calc(100vh - 75px);
+  top: 75px;
+  background: #6e4b4b;
+  z-index: 3;
+}
+
+/*Atomic CSS*/
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.text--pink {
+  color: var(--orange);
+}
+/*end atomic*/
+
+.clear {
+  height: 75px;
+  width: 100%;
+}
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.section--intro {
+  background: #f1e4e6;
+  height: 764px;
+  display: flex; /*Аккуратно*/
+  align-items: center;
+}
+
+.section--intro2 {
+  background: #f1e4e6;
+  height: 148px;
+  display: flex; /*Аккуратно*/
+  align-items: center;
+}
+
+.section__wrapper {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.section.section--features {
+  background: #222222;
+}
+
+/**Intro*/
+.intro_2{
+  background: #f1e4e6;
+  height: 148px;
+  display: flex; /*Аккуратно*/
+  align-items: center;
+}
+
+.intro__photo {
+  max-height: 100%;
+  width: auto;
+}
+
+.intro__brand {
+  margin-left: 92px;
+  position: relative;
+}
+
+.intro__title,
+.intro__subtitle {
+  font-family: Lato;
+  margin: 0;
+}
+
+.intro__brand::before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  width: 12px;
+  height: 100%;
+  background-color: var(--orange);
+}
+
+/*Button*/
+.button {
+  font-family: Lato;
+  outline: none;
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  background: none;
+  height: 47px;
+  padding-left: 39px;
+  padding-right: 39px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+  width: fit-content;
+}
+
+.button--white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.button:hover {
+  color: #ffffff;
+  background: var(--orange);
+}
+
+.button--white:hover {
+  border-color: var(--orange);
+}
+
+.button:focus {
+  outline: none;
+}
+
+/*Items*/
+.items__title,
+.items__subtitle {
+  font-family: Lato;
+}
+
+.items__title {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.items__subtitle {
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 0;
+  font-weight: normal;
+  color: #9f9f9f;
+}
+
+.items__card {
+  width: 360px;
+  text-align: left;
+}
+
+.card__img {
+  background-image: var(--bg-img);
+  background-size: cover;
+  width: 100%;
+  height: 420px;
+}
+
+.card__caption {
+  padding: 20px 29px 20px 17px;
+  background: #f8f8f8;
+}
+
+.card__name {
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.card__description {
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #5d5d5d;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.card__price {
+  color: var(--orange);
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+}
+
+.card__hover {
+  background: rgba(58, 56, 56, 0.86);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card__hover:hover {
+  opacity: 1;
+}
+
+/*feature*/
+
+.section--features {
+  background: #222224;
+}
+
+.feature {
+  text-align: center;
+  max-width: 360px;
+}
+
+.feature__icon {
+  color: var(--orange);
+}
+
+.feature__title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #fbfbfb;
+}
+
+.feature__subtitle {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #fbfbfb;
+}
+
+.section--features .section__wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 104px 0;
+}
