@@ -13,24 +13,43 @@
     <div class="content">
       <header class="header center">
         <div class="header__left">
-          <a href="./index.html"><img src="img/logo.svg" alt="logo" /> </a>
-          <a href="#"><img class="header__search" src="img/search.svg" alt="search" /></a>
+          <a href="./index.html">
+            <img src="img/logo.svg" alt="Logo" />
+          </a>
+          <a href="#">
+            <img
+              class="header__search"
+              src="img/search.svg"
+              alt="search"
+            />
+          </a>
         </div>
         <nav class="header__right">
           <label class="switcher__label" for="switcher">
-            <img id="menu" src="img/menu.svg" alt="menu" />
+            <img id="menu" src="img/menu.svg" alt="меню" />
           </label>
           <div class="header__menu_wrapper">
             <div class="header__menu_box">
               <div class="header__box header__box_nav">
-                <a class="header__account_nav" href="#">
-                  <img src="img/account.svg" alt="account" />
+                <a class="header__account_nav" href="./registration.html">
+                  <img src="img/account.svg" alt="аккаунт" />
                 </a>
-                <a class="header__cart_nav" href="#"><img src="img/cart.svg" alt="cart" /></a>
+                <a class="header__cart_nav" href="shop_card.html">
+                  <img src="img/cart.svg" alt="корзина" />
+                </a>
               </div>
-        </nav>
             </div>
           </div>
+          <div class="header__box">
+            <a class="header__account" href="./registration.html">
+              <img src="img/account.svg" alt="аккаунт" />
+            </a>
+            <a class="header__cart" href="./cart.html">
+              <img src="img/cart.svg" alt="корзина" />
+            </a>
+          </div>
+        </nav>
+      </header>
           <div class="title center">
             <h2 class="title__text">SHOPPING CART</h2>
           </div>
@@ -50,7 +69,8 @@
                     <input class="cart__item_quantity" type="number" name="quantity" id="quantity1" min="1" value="1" required/></span>
                 </div>
               </div>
-              <div class="cart__item"><img class="cart__item_img" src="img/photo_12.jpg" alt="drees"/>
+              <div class="cart__item">
+                <img class="cart__item_img" src="img/photo_12.jpg" alt="drees"/>
                 <div class="cart__item_description">
                   <h4 class="cart__item_tittle">
                     <a class="cart__link" href="./product.html">MANGO PEOPLE T-SHIRT</a>
@@ -59,8 +79,8 @@
                   <span class="cart__item_info">Price:<span class="cart__item_pice"> $300 </span>
                   <span class="cart__item_info">Color:<span> Red </span>
                   <span class="cart__item_info">Size:<span> Xl </span>
-                  <span class="cart__item_info">Quantity:<input class="cart__item_quantity" type="number" name="quantity" id="quantity2" min="1" value="2" required/>
-                  </span>
+                  <span class="cart__item_info">Quantity:
+                    <input class="cart__item_quantity" type="number" name="quantity" id="quantity2" min="1" value="2" required/></span>
                 </div>
               </div>
               <div class="cart__input">
@@ -125,6 +145,14 @@
               </div>
               <div class="footer__bottom_icon">
                 <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/instargam.svg" alt="instargam"></a>
+              </div>
+
+              <div class="footer__bottom_icon">
+                <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/p.svg" alt="p"></a>
+              </div>
+
+              <div class="footer__bottom_icon">
+                <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/tviter.svg" alt="twiter"></a>
               </div>
   </div>
   </div>

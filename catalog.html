@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Title_shop</title>
+    <title>Catalog</title>
   </head>
   <body>
     <div class="wrapper">
@@ -16,6 +16,8 @@
           </div>
 
           <nav class="header__right">
+
+            <label class="switcher__label" for="switcher">
               <img id="menu" src="img/menu.svg" alt="menu" />
             </label>
             <div class="header__menu_wrapper">
@@ -36,83 +38,101 @@
             </div>
           </nav>
         </header>
-        <div class="overlay">
-          <div class="menu">
-            <div class="menu__title"></div>
-            <div class="menu__close"></div>
-            <div class="menu__icons">
-              <div class="header__box">
-                  <a class="header__account" href="./registration.html">
-                  <img src="img/account.svg" alt="account" /></a>
-                  <a class="header__cart" href="shop_card.html">
-                  <img src="img/cart.svg" alt="trash" /></a>
-              </div>
-
-            </div>
-
-          </div>
-
-
-        </div>
-        <section class="promo">
-          <div class="promo__left">
-            <img class="promo__img" src="img/intro__photo.png" alt="promo"/>
-          </div>
-          <div class="promo__right">
-            <div class="promo__right_first"></div>
-            <div class="promo__heading">
-              <h1 class="promo__title">THE BRAND</h1>
-              <p class="promo__text"> OF LUXERIOUS <span class="promo__text_span">FASHION</span></p>
-            </div>
-          </div>
-        </section>
-        <section class="catalog center2 catalog__center">
-          <div class="catalog__item">
-            <img class="catalog__imag" src="img/catalog1.jpg" alt="catalog1"/>
-            <div class="catalog__content">
-              <a href="./catalog.html">
-                <p class="catalog__text">30% OFF</p>
-                <h3 class="catalog__heading">FOR WOMEN</h3>
-              </a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <img class="catalog__imag" src="img/catalog2.jpg" alt="catalog2"/>
-            <div class="catalog__content">
-              <a href="./catalog.html">
-                <p class="catalog__text">HOT DEAL</p>
-                <h3 class="catalog__heading">FOR MEN</h3>
-              </a>
-            </div>
-          </div>
-          <div class="catalog__item">
-            <img class="catalog__imag" src="img/catalog3.jpg" alt="catalog3"/>
-            <div class="catalog__content">
-              <a href="./catalog.html">
-                <p class="catalog__text">NEW ARRIVALS</p>
-                <h3 class="catalog__heading">FOR KIDS</h3>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="catalog__item_big center2 catalog__center">
-          <img class="catalog__big_img" src="img/catalogBig.jpg" alt="catalog4"/>
-          <div class="catalog__content">
-            <a href="./catalog.html">
-              <p class="catalog__text">LUXIROUS & TRENDY</p>
-              <h3 class="catalog__heading">ACCESORIES</h3>
+        <section class="title center">
+          <h2 class="title__text">NEW ARRIVALS</h2>
+          <nav class="title__nav_box">
+            <a class="title__nav_link" href="./index.html">HOME</a>
+            <a class="title__nav_link" href="./catalog.html">MEN</a>
+            <a class="title__nav_link title__link_active" href="./catalog.html">
+              NEW ARRIVALS
             </a>
-          </div>
+          </nav>
         </section>
-        <section class="featured featured__index center2">
-          <h4 class="featured__heading">Fetured Items</h4>
-          <p class="featured__text">
-            Shop for items based on what we featured in this week
-          </p>
+
+        <div class="sort center">
+          <div class="sort__filter sort__filter_active">
+            <div class="sort__filter_name">
+              <span class="sort__title">FILTER</span>
+              <a class="sort__filter_svg" href="#"> <img src="img/sort.svg" alt="sort"></a>
+            </div>
+          </div>
+        </div>
+          <div class="sort__param">
+            <details class="sort__open">
+              <summary class="sort__param_span">
+                TRENDING NOW <img class="sort__param_svg" src="img/v.svg" alt="v">
+              </summary>
+              <div class="sort__check sort__trending">
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="trending"/>
+                  trending1
+                </label>
+
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="trending"/>
+                  trending2
+                </label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="trending"/>
+                  trending3
+                </label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="trending"/>
+                  trending4
+                </label>
+              </div>
+            </details>
+            <details class="sort__open">
+              <summary class="sort__param_span">
+                SIZE
+                <img class="sort__param_svg" src="img/v.svg" alt="v">
+              </summary>
+              <div class="sort__check sort__size">
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="size"/>
+                  XS
+                </label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="size"/>
+                  S
+                </label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="size"/>
+                  M
+                </label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="size"/>
+                  L
+                </label>
+              </div>
+            </details>
+            <details class="sort__open">
+              <summary class="sort__param_span">
+                PRICE
+                <img class="sort__param_svg" src="img/v.svg" alt="v">
+              </summary>
+              <div class="sort__check sort__price">
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="price"/>
+                  price1</label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="price"/>
+                  price2</label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="price"/>
+                  price3</label>
+                <label>
+                  <input class="sort__check_input" type="checkbox" name="price"/>
+                  price4</label>
+              </div>
+            </details>
+          </div>
+        </div>
+        <section class="featured featured__catalog center2">
           <div class="featured__items">
             <div class="featured__item">
               <div class="featured__item_img">
-                <a href="./cart.html" class="featured__hover">
+                <a href="shop_card.html" class="featured__hover">
                   <div class="featured__hover_text">
                     <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
                     <span class="featured__hover_addCart">Add to Cart</span>
@@ -136,14 +156,13 @@
             </div>
             <div class="featured__item">
               <div class="featured__item_img">
-                <a href="./cart.html" class="featured__hover">
+                <a href="shop_card.html" class="featured__hover">
                   <div class="featured__hover_text">
                     <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
                     <span class="featured__hover_addCart">Add to Cart</span>
                   </div>
                 </a>
-                <img src="img/catalog/catalog2.jpg" alt="popular_goods"
-                />
+                <img src="img/catalog/catalog12.jpg" alt="popular_goods"/>
               </div>
               <div class="featured__content">
                 <h4 class="featured__content_title">
@@ -159,19 +178,15 @@
                 <span class="featured__price">$52.00</span>
               </div>
             </div>
-            <div class="featured__item">
+            <div class="featured__item featured__item_mobile">
               <div class="featured__item_img">
-                <a href="./cart.html" class="featured__hover">
+                <a href="shop_card.html" class="featured__hover">
                   <div class="featured__hover_text">
-                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"
-                    />
+                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
                     <span class="featured__hover_addCart">Add to Cart</span>
                   </div>
                 </a>
-                <img
-                  src="img/catalog/catalog3.jpg"
-                  alt="popular_goods "
-                />
+                <img src="img/catalog/catalog3.jpg" alt="popular_goods"/>
               </div>
               <div class="featured__content">
                 <h4 class="featured__content_title">
@@ -189,20 +204,13 @@
             </div>
             <div class="featured__item">
               <div class="featured__item_img">
-                <a href="./cart.html" class="featured__hover">
+                <a href="shop_card.html" class="featured__hover">
                   <div class="featured__hover_text">
-                    <img
-                      class="featured__hover_cart"
-                      src="img/cart.svg"
-                      alt=""
-                    />
+                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
                     <span class="featured__hover_addCart">Add to Cart</span>
                   </div>
                 </a>
-                <img
-                  src="img/catalog/catalog4.jpg"
-                  alt="popular_goods "
-                />
+                <img src="img/catalog/catalog4.jpg" alt="popular_goods"/>
               </div>
               <div class="featured__content">
                 <h4 class="featured__content_title">
@@ -220,36 +228,109 @@
             </div>
             <div class="featured__item">
               <div class="featured__item_img">
-                <a href="./cart.html" class="featured__hover">
+                <a href="shop_card.html" class="featured__hover">
                   <div class="featured__hover_text">
-                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>                    <span class="featured__hover_addCart">Add to Cart</span>
-                  </div>
-                </a>
-                <img src="img/catalog/catalog5.jpg" alt="popular_goods"/>
-              </div>
-              <div class="featured__content">
-                <h4 class="featured__content_title">
-                  <a class="featured__content_title_a" href="./product.html">
-                    ELLERY X M'O CAPSULE
-                  </a>
-                </h4>
-                <p class="featured__content_text">
-                  Known for her sculptural takes on traditional tailoring,
-                  Australian arbiter of cool Kym Ellery teams up with Moda
-                  Operandi.
-                </p>
-                <span class="featured__price">$52.00</span>
-              </div>
-            </div>
-            <div class="featured__item">
-              <div class="featured__item_img">
-                <a href="./cart.html" class="featured__hover">
-                  <div class="featured__hover_text">
-                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash" />
+                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
                     <span class="featured__hover_addCart">Add to Cart</span>
                   </div>
                 </a>
-                <img src="img/catalog/catalog6.jpg" alt="popular_goods"/>
+                <img src="img/catalog/catalog11.jpg" alt="popular_goods"/>
+              </div>
+              <div class="featured__content">
+                <h4 class="featured__content_title">
+                  <a class="featured__content_title_a" href="./product.html">
+                    ELLERY X M'O CAPSULE
+                  </a>
+                </h4>
+                <p class="featured__content_text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="featured__price">$52.00</span>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__item_img">
+                <a href="shop_card.html" class="featured__hover">
+                  <div class="featured__hover_text">
+                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
+                    <span class="featured__hover_addCart">Add to Cart</span>
+                  </div>
+                </a>
+                <img src="img/catalog/catalog10.jpg" alt="popular_goods"/>
+              </div>
+              <div class="featured__content">
+                <h4 class="featured__content_title">
+                  <a class="featured__content_title_a" href="./product.html">
+                    ELLERY X M'O CAPSULE
+                  </a>
+                </h4>
+                <p class="featured__content_text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="featured__price">$52.00</span>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__item_img">
+                <a href="shop_card.html" class="featured__hover">
+                  <div class="featured__hover_text">
+                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
+                    <span class="featured__hover_addCart">Add to Cart</span>
+                  </div>
+                </a>
+                <img src="img/catalog/catalog9.jpg" alt="popular_goods"/>
+              </div>
+              <div class="featured__content">
+                <h4 class="featured__content_title">
+                  <a class="featured__content_title_a" href="./product.html">
+                    ELLERY X M'O CAPSULE
+                  </a>
+                </h4>
+                <p class="featured__content_text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="featured__price">$52.00</span>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__item_img">
+                <a href="shop_card.html" class="featured__hover">
+                  <div class="featured__hover_text">
+                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
+                    <span class="featured__hover_addCart">Add to Cart</span>
+                  </div>
+                </a>
+                <img src="img/catalog/catalog8.jpg" alt="popular_goods"/>
+              </div>
+              <div class="featured__content">
+                <h4 class="featured__content_title">
+                  <a class="featured__content_title_a" href="./product.html">
+                    ELLERY X M'O CAPSULE
+                  </a>
+                </h4>
+                <p class="featured__content_text">
+                  Known for her sculptural takes on traditional tailoring,
+                  Australian arbiter of cool Kym Ellery teams up with Moda
+                  Operandi.
+                </p>
+                <span class="featured__price">$52.00</span>
+              </div>
+            </div>
+            <div class="featured__item">
+              <div class="featured__item_img">
+                <a href="shop_card.html" class="featured__hover">
+                  <div class="featured__hover_text">
+                    <img class="featured__hover_cart" src="img/cart.svg" alt="trash"/>
+                    <span class="featured__hover_addCart">Add to Cart</span>
+                  </div>
+                </a>
+                <img src="img/catalog/catalog7.jpg" alt="popular_goods"/>
               </div>
               <div class="featured__content">
                 <h4 class="featured__content_title">
@@ -266,9 +347,22 @@
               </div>
             </div>
           </div>
-          <div class="featured__footer center2">
-            <a class="button featured__button" href="./catalog.html">
-              Browse All Product
+          <div class="pagination_catalog">
+            <a class="pagination_left" href="#"> <img class="pagination__svg" src="img/st_l.svg" alt="cursor_left">
+            </a>
+            <div class="pagination_number">
+              <a class="pagination__link pagination_active" href="#">1</a>
+              <a class="pagination__link" href="./catalog.html">2</a>
+              <a class="pagination__link" href="./catalog.html">3</a>
+              <a class="pagination__link" href="./catalog.html">4</a>
+              <a class="pagination__link" href="./catalog.html">5</a>
+              <a class="pagination__link" href="./catalog.html">6</a>
+              <a class="pagination__link pagination__more" href="./catalog.html"
+                >.....</a
+              >
+              <a class="pagination__link" href="./catalog.html">20</a>
+            </div>
+            <a class="pagination_right" href="#"> <img class="pagination__svg" src="img/st_r.svg" alt="cursor_right">
             </a>
           </div>
         </section>
