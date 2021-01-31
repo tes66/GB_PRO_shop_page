@@ -514,6 +514,13 @@ details summary::-webkit-details-marker {
   display: block;
   opacity: 1; }
 
+.sort__filter_active:hover {
+  position: absolute;
+  width: 360px;
+  background: #FFF;
+  z-index: 1;
+  }
+
 .sort__ul {
   padding-left: 16px;
   font-size: 14px;
