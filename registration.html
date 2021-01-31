@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <header class="header center">
+          <div class="header__left">
+            <a href="./index.html"><img src="img/logo.svg" alt="Logo" /></a>
+            <a href="#"><img class="header__search" src="img/search.svg" alt="search"/></a>
+          </div>
+
+          <nav class="header__right">
+
+            <label class="switcher__label" for="switcher">
+              <img id="menu" src="img/menu.svg" alt="menu" />
+            </label>
+            <div class="header__menu_wrapper">
+              <div class="header__menu_box">
+                <div class="header__box header__box_nav">
+                  <a class="header__account_nav" href="./registration.html">
+                    <img src="img/account.svg" alt="account" /></a>
+                  <a class="header__cart_nav" href="shop_card.html">
+                    <img src="img/cart.svg" alt="trash" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="header__box"> <a class="header__account" href="./registration.html">
+                <img src="img/account.svg" alt="account" /></a>
+              <a class="header__cart" href="shop_card.html">
+                <img src="img/cart.svg" alt="trash" />
+              </a>
+            </div>
+          </nav>
+        </header>
+        <div class="title center">
+          <h2 class="title__text title__text_mobile">REGISTRATION</h2>
+        </div>
+        <div class="registration center2">
+          <form action="#" class="registration__left">
+            <span class="registration__left_title">Your Name</span>
+            <input class="registration__left_input" type="text" name="firstName" id="firstName" placeholder="First Name" required/>
+            <input class="registration__left_input" type="text" name="lastName" id="lastName"
+              placeholder="Last Name" required/>
+            <div class="registration__left_group-radio">
+              <label class="registration__label">
+                <input class="registration__left_radio" type="radio" name="radioBtm" id="radioBtm1"
+                  required/>
+                Male
+              </label>
+              <label class="registration__label">
+                <input class="registration__left_radio" type="radio" name="radioBtm" id="radioBtm2"
+                  required/>
+                Female
+              </label>
+              <label class="registration__left_other">
+                <input class="registration__left_radio" type="radio" name="radioBtm" id="radioBtm3"
+                  required/>
+                Other
+              </label>
+            </div>
+            <span>Login details</span>
+            <input class="registration__left_input" type="email" name="email" id="email" placeholder="Email" required/>
+            <input class="registration__left_input" type="password" name="password" id="password"
+              placeholder="Password" required/>
+            <p class="registration__left_text">
+              Please use 8 or more characters, with at least 1 number and a
+              mixture of uppercase and lowercase letters
+            </p>
+            <button class="button registration__left_button" type="submit">
+              JOIN NOW
+            </button>
+          </form>
+          <section class="registration__right">
+            <h3 class="registration__right_title">LOYALTY HAS ITS PERKS</h3>
+            <p class="registration__right_text">
+              Get in on the loyalty program where you can earn points and unlock
+              serious perks. Starting with these as soon as you join:
+            </p>
+            <ul class="registration__right_ul">
+              <li class="registration__right_li">15% off welcome offer</li>
+              <li class="registration__right_li">
+                Free shipping, returns and exchanges on all orders
+              </li>
+              <li class="registration__right_li">
+                $10 off a purchase on your birthday
+              </li>
+              <li class="registration__right_li">Early access to products</li>
+              <li class="registration__right_li">Exclusive offers & rewards</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__center center">
+          <figure class="footer__center_left">
+            <img src="img/photo_footer.png" alt="photo_hum" />
+            <figcaption class="footer__center_left_text">
+              “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+              pulvinar purus condimentum“
+            </figcaption>
+          </figure>
+          <div class="footer__center_right">
+            <h6 class="footer__center_right_heading">SUBSCRIBE</h6>
+            <p class="footer__center_right_text">
+              FOR OUR NEWLETTER AND PROMOTION
+            </p>
+            <form class="footer__center_wrapper">
+              <input class="footer__center_input" type="email" name="text" id="input_footer" required placeholder="Enter Your Email"/>
+              <button class="footer__center_button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom center">
+          <div class="footer__bottom_left">
+            <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+          </div>
+          <div class="footer__bottom_right">
+            <div class="footer__bottom_icon">
+              <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/facebook.svg" alt="facebook"></a>
+            </div>
+
+            <div class="footer__bottom_icon">
+              <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/instargam.svg" alt="instargam"></a>
+            </div>
+
+            <div class="footer__bottom_icon">
+              <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/p.svg" alt="p"></a>
+            </div>
+
+            <div class="footer__bottom_icon">
+              <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/tviter.svg" alt="twiter"></a>
+            </div>
+
+          </div>
+        </div>
+        </footer>
+    </div>
+  </body>
+</html>
