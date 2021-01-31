@@ -1,54 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop Card</title>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body>
-    <div class="menu">
-      <header class="navbar">
-        <div class="navbar__wrapper">
-          <div class="navbar__icon float-left"></div>
-          <div class="navbar__icon float-left"></div>
-          <div class="navbar__icon float-right"></div>
-          <div class="navbar__icon float-right"></div>
-          <div class="navbar__icon float-right burger">=</div>
-          <nav class="navbar__nav"></nav>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Cart</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header center">
+        <div class="header__left">
+          <a href="./index.html">
+            <img src="img/logo.svg" alt="Logo" />
+          </a>
+          <a href="#">
+            <img
+              class="header__search"
+              src="img/search.svg"
+              alt="search"
+            />
+          </a>
         </div>
+        <nav class="header__right">
+          <label class="switcher__label" for="switcher">
+            <img id="menu" src="img/menu.svg" alt="меню" />
+          </label>
+          <div class="header__menu_wrapper">
+            <div class="header__menu_box">
+              <div class="header__box header__box_nav">
+                <a class="header__account_nav" href="./registration.html">
+                  <img src="img/account.svg" alt="аккаунт" />
+                </a>
+                <a class="header__cart_nav" href="shop_card.html">
+                  <img src="img/cart.svg" alt="корзина" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__box">
+            <a class="header__account" href="./registration.html">
+              <img src="img/account.svg" alt="аккаунт" />
+            </a>
+            <a class="header__cart" href="./cart.html">
+              <img src="img/cart.svg" alt="корзина" />
+            </a>
+          </div>
+        </nav>
       </header>
-    </div>
-    <div class="clear"></div>
-
-    <div class="intro_2">
-      <section class="section section--intro2">
-          <div class="intro__brand">
-          <h2 class="intro__subtitle">
-          <span class="text--pink">SHOPPING CART</span>
-          </h2>
+          <div class="title center">
+            <h2 class="title__text">SHOPPING CART</h2>
+          </div>
+          <div class="cart center2">
+            <div class="cart__left">
+              <div class="cart__item">
+                <img class="cart__item_img" src="img/photo_3.jpg" alt="drees"/>
+                <div class="cart__item_description">
+                  <h4 class="cart__item_tittle">
+                    <a class="cart__link" href="./product.html">MANGO PEOPLE T-SHIRT</a>
+                  </h4>
+                  <a href="#" class="cart__item_delete"> <img src="img/x.svg" alt="x"></a>
+                  <span class="cart__item_info">Price:<span class="cart__item_pice"> $300 </span></span>
+                  <span class="cart__item_info">Color:<span> Red </span></span>
+                  <span class="cart__item_info">Size:<span> Xl </span></span>
+                  <span class="cart__item_info">Quantity:
+                    <input class="cart__item_quantity" type="number" name="quantity" id="quantity1" min="1" value="1" required/></span>
+                </div>
+              </div>
+              <div class="cart__item">
+                <img class="cart__item_img" src="img/photo_12.jpg" alt="drees"/>
+                <div class="cart__item_description">
+                  <h4 class="cart__item_tittle">
+                    <a class="cart__link" href="./product.html">MANGO PEOPLE T-SHIRT</a>
+                  </h4>
+                  <a href="#" class="cart__item_delete"> <img src="img/x.svg" alt="x"></a>
+                  <span class="cart__item_info">Price:<span class="cart__item_pice"> $300 </span>
+                  <span class="cart__item_info">Color:<span> Red </span>
+                  <span class="cart__item_info">Size:<span> Xl </span>
+                  <span class="cart__item_info">Quantity:
+                    <input class="cart__item_quantity" type="number" name="quantity" id="quantity2" min="1" value="2" required/></span>
+                </div>
+              </div>
+              <div class="cart__input">
+                <a class="button cart__input_link" href="#">CLEAR SHOPPING CART</a>
+                <a class="button cart__input_link" href="./catalog.html">CONTINUE SHOPPING</a>
+              </div>
+            </div>
+            <form class="cart__right">
+              <h4 class="cart__right_title">SHIPPING ADRESS</h4>
+              <div class="cart__right_row">
+                <div class="cart__right_box1">
+                  <input class="cart__right_input" type="text" name="bangladesh" id="bangladesh" placeholder="Bangladesh" required/>
+                  <input class="cart__right_input" type="text" name="state" id="state" placeholder="State" required/>
+                  <input class="cart__right_input" type="number" name="postcode" id="postcode" placeholder="Postcode / Zip" required />
+                  <button class="button cart__right_button" type="submit">GET A QUOTE</button>
+                </div>
+                <div class="cart__right_box2">
+                  <div class="cart__right_sub">
+                    <span>SUB TOTAL</span>
+                    <span class="cart__right_sub-price">$900</span>
+                  </div>
+                  <div class="cart__right_grand">
+                    <span>GRAND TOTAL</span>
+                    <span class="cart__right_grand-price">$900</span>
+                  </div>
+                  <div class="cart__right_line"></div>
+                  <button class="button cart__right_button2" type="submit">PROCEED TO CHECKOUT</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-      </section>
-    </div>
+        <footer class="footer">
+          <div class="footer__center center">
+            <figure class="footer__center_left">
+              <img src="img/photo_footer.png" alt="foto_hum" />
+              <figcaption class="footer__center_left_text">
+                “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                pulvinar purus condimentum“
+              </figcaption>
+            </figure>
+            <div class="footer__center_right">
+              <h6 class="footer__center_right_heading">SUBSCRIBE</h6>
+              <p class="footer__center_right_text">
+                FOR OUR NEWLETTER AND PROMOTION
+              </p>
+              <form class="footer__center_wrapper">
+                <input class="footer__center_input" type="email" name="text" id="input_footer" required
+                  placeholder="Enter Your Email"/>
+                <button class="footer__center_button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__bottom center">
+            <div class="footer__bottom_left">
+              <p class="footer__copyright">© 2021 Brand All Rights Reserved.</p>
+            </div>
+            <div class="footer__bottom_right">
+              <div class="footer__bottom_icon">
+                <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/facebook.svg" alt="facebook"></a>
+                </a>
+              </div>
+              <div class="footer__bottom_icon">
+                <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/instargam.svg" alt="instargam"></a>
+              </div>
 
-    <figure class="shop__card card_01">
-      <div class="shop__img"></div>
+              <div class="footer__bottom_icon">
+                <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/p.svg" alt="p"></a>
+              </div>
 
-    </figure>
-
-    <footer class="footer">
-      <div class="footer__wrapper"></div>
-    </footer>
-  </body>
-</html>
+              <div class="footer__bottom_icon">
+                <a class="footer__bottom_icon_a --footer__bottom_icon_svg" href="#"> <img src="img/tviter.svg" alt="twiter"></a>
+              </div>
+  </div>
+  </div>
+</body>
